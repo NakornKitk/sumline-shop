@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import useStore from "@/store/store";
 import ImageSlider from './ImageSlider.jsx';
-import icon from "@/assets/images/search-product-icon.svg";
+// import icon from "@/assets/images/search-product-icon.svg";
 
 function ProductDetail({
   image,
@@ -51,7 +51,7 @@ function ProductDetail({
 
   return (
     <div className="w-100% bg-white mt-[80px]">
-      <div className="flex justify-between py-[20px] px-[20px] bg-[url('@/assets/images/bg.jpg')] bg-fixed">
+      <div className="flex justify-between py-[20px] px-[20px] bg-[url('https://nakornkitk.github.io/sumline-shop/images/bg.jpg')] bg-cover bg-fixed">
         <Link
           to={"/sumline-shop/"}
           className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
@@ -69,7 +69,7 @@ function ProductDetail({
           <h5 className="text-3xl md:text-4xl text-black pl-[10%]">
             Product Detail
           </h5>
-          <img src={icon} alt="" className="w-10 pl-[10px]" />
+          <img src="https://nakornkitk.github.io/sumline-shop/images/search-product-icon.svg" alt="" className="w-10 pl-[10px]" />
         </div>
       <div className=' px-[20px] pt-[20px] pb-[40px] md:flex mb-[10px]">'>
         <div className="px-[10%] py-[10px] md:max-w-[50%] min-w-[283px]" >

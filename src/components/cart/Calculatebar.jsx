@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import useStore from "@/store/store";
-import iconShopee from "@/assets/images/shopee-icon.png";
-import iconLine from '@/assets/images/LINE_Brand_icon.png'
-import iconInstagram from '@/assets/images/ig-instagram-icon.png'
+// import iconShopee from "@/assets/images/shopee-icon.png";
+// import iconLine from '@/assets/images/LINE_Brand_icon.png'
+// import iconInstagram from '@/assets/images/ig-instagram-icon.png'
 
 function Calculatebar() {
   const { cartItems } = useStore();
@@ -39,19 +39,19 @@ function Calculatebar() {
             href={"https://shopee.co.th/sumline.shop"}
             className="w-10 mr-[10px] hover:scale-110 transform transition duration-2"
           >
-            <img src={iconShopee} alt=""/>
+            <img src="https://nakornkitk.github.io/sumline-shop/images/shopee-icon.png" alt=""/>
           </a>
           <a
             href={"https://www.instagram.com/sumline.shop"}
             className="w-10 mr-[10px] pt-[5px] hover:scale-110 transform transition duration-2"
           >
-            <img src={iconInstagram} alt=""/>
+            <img src="https://nakornkitk.github.io/sumline-shop/images/ig-instagram-icon.png" alt=""/>
           </a>
           <a
             href={"https://line.me/R/ti/p/@719ojtgk"}
             className="w-10 mr-[10px] pt-[5px] hover:scale-110 transform transition duration-2"
           >
-            <img src={iconLine} alt=""/>
+            <img src="https://nakornkitk.github.io/sumline-shop/images/LINE_Brand_icon.png" alt=""/>
           </a>
       </div>
     </div>
