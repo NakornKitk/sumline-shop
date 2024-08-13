@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import useStore from "@/store/store";
 
 
-function ProductCard({image, name, id, price, category, color}) {
-  const { addCartItem, cartItems, setItemQuantity} = useStore();
+function ProductCard({image, name, id, price, category, color, wishstatus}) {
+  const { addCartItem, cartItems, setItemQuantity, setWishStatus} = useStore();
   let firstQuantity = 0;
 
   cartItems.map((item) => {
@@ -25,12 +25,21 @@ function ProductCard({image, name, id, price, category, color}) {
     setQuantity(quantity => quantity+1)
   }
 
+  const handleWishStatus = (id,status) => {
+    setWishStatus(id,status)
+  }
+
 
   return (
     <div className="w-full max-w-[300px] bg-zinc-100 border border-gray-200 rounded-lg shadow mx-[auto]">
-      <Link to={`/sumline-shop/detail/${id}`}>
-        <img className="hover:scale-105 transform transition duration-2 h-[300px] w-[300px] rounded-t-lg" src={image[0]} alt="" />
-      </Link>
+      <div className="relative hover:scale-105 transform transition duration-2">
+        <Link to={`/sumline-shop/detail/${id}`}>
+          <img className="h-[300px] w-[300px] rounded-t-lg" src={image[0]} alt="" />
+        </Link>
+        <span className={
+              wishstatus ? 'material-symbols-outlined absolute right-[4%] top-[4%] rounded-full p-[5px] bg-red-700 text-white cursor-pointer' : 'material-symbols-outlined absolute right-[5%] top-[5%] text-black cursor-pointer'
+            } onClick={() => handleWishStatus(id,wishstatus)}>favorite</span>
+      </div>
         <div className="px-5 py-5">
           <p className=" text-xl text-black">{name}</p>
           <p className=" text-gray-500">color: {color}</p>

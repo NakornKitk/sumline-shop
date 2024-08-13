@@ -57,6 +57,7 @@ function ProductList() {
               name={item.name}
               color={item.color}
               category={item.category}
+              wishstatus={item.wishstatus}
             />
           );
         })}

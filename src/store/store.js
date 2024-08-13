@@ -25,6 +25,11 @@ let store = (set) => ({
             cartItems: state.cartItems.map(product =>
                 product.id === id ? { ...product, quantity: newValue } : product
               )
+        })),
+        setWishStatus: (id, oldstatus) => set((state) => ({
+            data: state.data.map(product =>
+                product.id === id ? { ...product, wishstatus: !oldstatus } : product
+              )
         }))
     })
 
