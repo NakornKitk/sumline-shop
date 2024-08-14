@@ -35,7 +35,7 @@ let store = (set) => ({
 
 
 
-store = persist(store, {name: "sumlineshopCart"})
+store = persist(store, {name: "Sumline_Shop_Cart_v1"})
 let useStore = create(store)
 
 export default useStore;
