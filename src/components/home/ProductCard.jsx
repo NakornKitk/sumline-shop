@@ -20,7 +20,7 @@ function ProductCard({image, name, id, price, category, color, wishstatus}) {
     if (cartItems.some(item => item.id === id)) {
       setItemQuantity(id,quantity+1)
     } else {
-      addCartItem({id:id,name:name,price:price,color:color,quantity:firstQuantity+1})
+      addCartItem({id:id,name:name,price:price,color:color,image:image[0],quantity:firstQuantity+1})
     }
     setQuantity(quantity => quantity+1)
   }
@@ -37,7 +37,7 @@ function ProductCard({image, name, id, price, category, color, wishstatus}) {
           <img className="h-[300px] w-[300px] rounded-t-lg" src={image[0]} alt="" />
         </Link>
         <span className={
-              wishstatus ? 'material-symbols-outlined absolute right-[4%] top-[4%] rounded-full p-[5px] bg-red-700 text-white cursor-pointer' : 'material-symbols-outlined absolute right-[5%] top-[5%] text-black cursor-pointer'
+              wishstatus ? 'material-symbols-outlined absolute right-[4%] top-[4%] rounded-full p-[5px] bg-red-700 text-white cursor-pointer' : 'material-symbols-outlined absolute right-[4%] top-[4%] p-[5px] text-black cursor-pointer'
             } onClick={() => handleWishStatus(id,wishstatus)}>favorite</span>
       </div>
         <div className="px-5 py-5">

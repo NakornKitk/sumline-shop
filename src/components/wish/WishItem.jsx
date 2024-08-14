@@ -22,7 +22,9 @@ function CartItem() {
               <li className="py-3" key={item.id}>
                 <div className="flex items-center">
                   <div className="w-[100px] h-[100px]">
-                    <img src={item.image[0]} alt=""/>
+                    <Link to={`/sumline-shop/detail/${item.id}`}>
+                      <img src={item.image[0]} alt=""/>
+                    </Link>
                   </div>
                   <div className="flex-1 min-w-0 ms-4">
                     <Link to={`/sumline-shop/detail/${item.id}`}>

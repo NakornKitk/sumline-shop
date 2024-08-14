@@ -6,7 +6,9 @@ function ProductList() {
   const { data, fetchData, searchTerm, categoryTerm, colorTerm, sortTerm } = useStore();
 
   useEffect(() => {
-    fetchData();
+    if (data[0] === undefined) {
+      fetchData();
+    }
   }, []);
 
   function dynamicSort(property) {
