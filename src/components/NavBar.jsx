@@ -38,7 +38,7 @@ function NavBar() {
           to="/sumline-shop/"
           className="text-2xl font-semibold text-white flex"
         >
-          <img src="https://nakornkitk.github.io/sumline-shop/images/logo.png" alt="" className="w-16 pr-[10px] hover:scale-110 transform transition duration-2"/>
+          <img src="https://nakornkitk.github.io/sumline-shop/images/Logo.png" alt="" className="w-16 pr-[10px] hover:scale-110 transform transition duration-2"/>
           <p className="my-auto hover:underline">Sumline Shop</p>
         </Link>
         <div className="flex">
