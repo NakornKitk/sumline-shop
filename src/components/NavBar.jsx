@@ -32,8 +32,8 @@ function NavBar() {
 
   
   return (
-    <nav className="bg-[#7C9097] fixed w-full z-20 top-0 left-0">
-      <div className="flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-[#7C9097] fixed w-full z-20 top-0 left-0 px-[20px] md:px-[50px] 2xl:px-[175px]">
+      <div className="flex flex-wrap items-center justify-between mx-auto py-4">
         <Link
           to="/sumline-shop/"
           className="text-2xl font-semibold text-white flex"

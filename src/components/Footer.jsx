@@ -4,7 +4,7 @@ import React from 'react'
 
 function footer() {
   return (
-    <footer className="bg-[#7C9097] p-4 static bottom-0">
+    <footer className="bg-[#7C9097] p-4 static bottom-0 px-[20px] md:px-[50px] 2xl:px-[175px]">
       <div className="text-2xl font-semibold text-white flex justify-between ">
         <p>Contact Me</p>
         <div className="flex">

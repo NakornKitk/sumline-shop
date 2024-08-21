@@ -17,7 +17,7 @@ const ImageSlider = ({images}) => {
   };
 
   return (
-    <div className="relative w-full max-w-2xl mx-auto md:min-w-[283px]">
+    <div className="relative w-full ">
       <div className="overflow-hidden relative rounded-lg">
         <div
           className="flex transition-transform ease-out duration-500"

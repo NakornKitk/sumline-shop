@@ -12,7 +12,7 @@ function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <NavBar />
-      <div className="md:h-80 py-[20px] flex bg-[url('https://nakornkitk.github.io/sumline-shop/images/bg.jpg')] bg-fixed md:bg-cover mt-[80px]">
+      <div className="md:h-80 py-[20px] flex bg-[url('https://nakornkitk.github.io/sumline-shop/images/bg.jpg')] bg-fixed md:bg-cover mt-[80px] px-[20px] md:px-[50px] 2xl:px-[175px]">
         <div className="w-[50%] pl-[7%] m-auto">
           <p className="text-white text-2xl md:text-4xl font-bold">Looking for your favorite Yarn bag?</p>
           <p className="text-white text-1xl md:text-3xl">Order it at sumline shop...</p>
@@ -47,7 +47,7 @@ function HomePage() {
       </div>
       <div className="p-4 mb-auto bg-white">
         <SearchBar />
-        <div className="flex px-[20px] pt-[40px] px-[auto]">
+        <div className="flex px-[20px] pt-[40px] px-[auto] px-[20px] md:px-[50px] 2xl:px-[175px]">
           <h5 className="text-3xl md:text-4xl text-black">
             Product List
           </h5>

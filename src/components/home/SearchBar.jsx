@@ -6,7 +6,7 @@ function SearchBar() {
     const { setSearchTerm, setCategoryTerm, setColorTerm, setSortTerm} = useStore();
 
     return (
-        <form className="grid justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[20px] mt-[20px] bg-white">
+        <form className="grid justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-[20px] mt-[20px] bg-white px-[20px] md:px-[50px] 2xl:px-[175px]">
             <div className="">
                 <label
                     htmlFor="categories"

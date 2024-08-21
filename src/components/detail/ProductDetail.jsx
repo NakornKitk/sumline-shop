@@ -55,8 +55,8 @@ function ProductDetail({
   }
 
   return (
-    <div className="w-100% bg-white mt-[80px]">
-      <div className="flex justify-between py-[20px] px-[20px] bg-[url('https://nakornkitk.github.io/sumline-shop/images/bg.jpg')] md:bg-cover bg-fixed">
+    <div className="w-100% bg-white mt-[80px] ">
+      <div className="flex justify-between py-[20px] bg-[url('https://nakornkitk.github.io/sumline-shop/images/bg.jpg')] md:bg-cover bg-fixed px-[20px] md:px-[50px] 2xl:px-[175px]">
         <Link
           to={"/sumline-shop/"}
           className="bg-zinc-200 px-[16px] py-[7px] rounded-[16px] font-semibold hover:scale-105 transform transition duration-2"
@@ -70,17 +70,17 @@ function ProductDetail({
           Go to my cart
         </Link>
       </div>
-      <div className="flex px-[auto] pt-[30px] px-[20px]">
-          <h5 className="text-3xl md:text-4xl text-black pl-[10%]">
+      <div className="flex px-[auto] pt-[30px] px-[20px] md:px-[50px] 2xl:px-[175px] ">
+          <h5 className="text-3xl md:text-4xl text-black">
             Product Detail
           </h5>
           <img src="https://nakornkitk.github.io/sumline-shop/images/search-product-icon.svg" alt="" className="w-10 pl-[10px]" />
         </div>
-      <div className=' px-[20px] pt-[20px] pb-[40px] md:flex mb-[10px]">'>
-        <div className="px-[10%] py-[10px] md:max-w-[50%] min-w-[283px]" >
+      <div className=' px-[20px] md:px-[50px] 2xl:px-[175px] pt-[20px] pb-[40px] md:flex mb-[10px] md:justify-between">'>
+        <div className=" py-[10px] md:w-[50%]" >
           <ImageSlider images={image} />
         </div>
-        <div className="md:max-w-[50%] pt-[20px] px-[10%] md:pl-[0px]">
+        <div className="md:w-[50%] pt-[20px] md:pl-[50px]">
           <div className="flex justify-between">
             <h5 className="mb-2 text-2xl md:text-4xl font-semibold tracking-tight textblack ">
               {name}
