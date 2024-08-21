@@ -45,7 +45,7 @@ function HomePage() {
           />
         </div>
       </div>
-      <div className="p-4 mb-auto bg-white">
+      <div className="py-4 mb-auto bg-white">
         <SearchBar />
         <div className="flex px-[20px] pt-[40px] px-[auto] px-[20px] md:px-[50px] 2xl:px-[175px]">
           <h5 className="text-3xl md:text-4xl text-black">
