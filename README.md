@@ -1,8 +1,19 @@
-# React + Vite
+# Sumline shop website version 1.0
+Front-end E-commerce website using React, Zustand, Vite and TailwindCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sumline shop version 2.0 is already release 🚨
 
-Currently, two official plugins are available:
+**Sumline shop V2** has release to a new location. <br>
+Please visit our version 2.0 respository here:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- respository: [sumline-shop-v2](https://github.com/NakornKitk/sumline-shop-v2)
+
+
+
+
+
+---
+
+
+This repository is now archived and will no longer be updated.<br>but can still visit our verion 1.0 website here
+- [sumline-shop-v1](https://nakornkitk.github.io/sumline-shop/)
